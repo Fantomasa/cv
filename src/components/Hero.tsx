@@ -5,7 +5,7 @@ import { BackgroundBeamsWithCollision } from "./ui/BackgroundBeams";
 
 export default function Hero() {
   return (
-    <div id="about" className="flex justify-center w-full md:w-1/2 mx-auto text-balance items-center pb-20 pt-36">
+    <section id="about" className="flex justify-center w-full md:w-1/2 mx-auto text-balance items-center pb-20 pt-36">
       <Spotlight className="-top40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white" />
       <Spotlight className="top-10 left-full h-2/3 w-1/2" fill="#E5ACB6" />
       <Spotlight className="top-28 left-80 h-2/3 w-1/2" fill="blue" />
@@ -13,7 +13,6 @@ export default function Hero() {
 
       <BackgroundBeamsWithCollision>
         <div className="flex justify-center my-10 z-10">
-          <div></div>
           <div className="flex-col">
             <TextGenerateEffect className="text-start text-lg" words="I'm a Softawre Engineer that writes code every day." />
             <p className="text-start w-full text-white/95 mt-5 md:tracking-wider mb-4 text-sm md:text-base">
@@ -24,6 +23,6 @@ export default function Hero() {
           </div>
         </div>
       </BackgroundBeamsWithCollision>
-    </div>
+    </section>
   );
 }

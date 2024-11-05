@@ -67,7 +67,14 @@
 }
 
 @layer utilities {
+  .section {
+    @apply relative w-full md:w-1/2 mx-auto;
+  }
   .heading {
-    @apply font-bold text-4xl md:text-5xl text-center;
+    @apply text-2xl leading-snug tracking-wide font-bold;
+  }
+
+  .sub-heading {
+    @apply text-start w-full text-white/95 mt-5 md:tracking-wider mb-4 text-sm md:text-base;
   }
 }
