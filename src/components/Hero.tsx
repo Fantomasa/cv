@@ -4,6 +4,7 @@ import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerate";
 import { BackgroundBeamsWithCollision } from "./ui/BackgroundBeams";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -15,7 +16,9 @@ export default function Hero() {
 
       <BackgroundBeamsWithCollision>
         <div className="flex justify-center my-20 z-10">
+          <div></div>
           <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex-col items-center flex justify-center">
+            <Image className="size-40 rounded-full mb-10" width={100} height={100} src="/Fantomasa.png" alt="avatar" />
             <h2 className="uppercase tracking-widest text-center text-blue-100 max-w-80">Dynamic Web Magic with Next.js</h2>
 
             <TextGenerateEffect
