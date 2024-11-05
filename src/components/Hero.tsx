@@ -1,4 +1,6 @@
+import { FaLocationArrow } from "react-icons/fa";
 import { GridBackground } from "./ui/GridBackground";
+import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerate";
 
@@ -20,6 +22,10 @@ export default function Hero() {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Hi i&apos;m Ivaylo, a Software Developer</p>
+
+          <a href="#about">
+            <MagicButton icon={<FaLocationArrow />} position="right" title="Show my work" />
+          </a>
         </div>
       </div>
     </div>
