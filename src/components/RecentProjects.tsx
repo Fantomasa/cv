@@ -3,7 +3,7 @@ import { AnimatedPin } from "./ui/PinContainer/PinContainer";
 
 export default function RecentProjects() {
   return (
-    <div className="relative py-20">
+    <div id="projects" className="relative py-20">
       <h1 className="font-bold text-4xl md:text-5xl text-center">
         Selection of <span className="text-primary">recent projects</span>
       </h1>

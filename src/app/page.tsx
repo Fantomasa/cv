@@ -1,17 +1,16 @@
 import { FloatingNav } from "@/components/FloatingNav";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
-import { ReactNode } from "react";
-import { FaHome } from "react-icons/fa";
+import { navItems } from "@/data";
 
-export type NavItem = { name: string; link: string; icon: ReactNode };
-const navItems: Array<NavItem> = [
-  {
-    name: "Home",
-    link: "/",
-    icon: <FaHome />
-  }
-];
+// export type NavItem = { name: string; link: string; icon: ReactNode };
+// const navItems: Array<NavItem> = [
+//   {
+//     name: "Home",
+//     link: "/",
+//     icon: <FaHome />
+//   }
+// ];
 
 export default function Home() {
   return (
