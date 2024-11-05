@@ -17,6 +17,8 @@ const config: Config = {
           DEFAULT: "#000",
           100: "#000319"
         },
+        primary: "#d896ff",
+        secondary: "#E5ACB6",
         background: "var(--background)",
         foreground: "var(--foreground)"
       },
