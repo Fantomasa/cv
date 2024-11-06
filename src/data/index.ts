@@ -25,6 +25,8 @@ export const techStack: {
   TS: Tech;
   MongoDB: Tech;
   PostgreSQL: Tech;
+  NextJS: Tech;
+  TWCSS: Tech;
 } = {
   JS: {
     id: 1,
@@ -85,6 +87,16 @@ export const techStack: {
     id: 12,
     name: "PostgreSQL",
     img: "/postgresql.png"
+  },
+  NextJS: {
+    id: 13,
+    name: "NextJS",
+    img: "/nextjs.png"
+  },
+  TWCSS: {
+    id: 15,
+    name: "TailwindCSS",
+    img: "/tailwindcss.png"
   }
 };
 
@@ -112,6 +124,14 @@ export const projects: Array<Project> = [
     desc: "This project aggregates public data from various websites, providing a centralized source of information for easy access and analysis.",
     githubLink: "",
     img: "/scrapper.png",
+    techStack: [techStack.TS, techStack.Docker, techStack.NextJS, techStack.TWCSS, techStack.GitHub, techStack.Redis, techStack.MongoDB]
+  },
+  {
+    id: 2,
+    title: "PulseScore",
+    desc: "Your go-to platform for real-time sports data and scores across Football, Basketball, and Tennis. Dive into live scores, fixtures, league tables, and more.",
+    githubLink: "",
+    img: "/pulsescore.png",
     techStack: [techStack.TS]
   }
 ];

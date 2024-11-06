@@ -5,7 +5,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { motion, useTransform, AnimatePresence, useMotionValue, useSpring } from "framer-motion";
 
-export default function Tech({ tech }: { tech: Tech }) {
+export default function TechComponent({ tech }: { tech: Tech }) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const springConfig = { stiffness: 100, damping: 5 };
   const x = useMotionValue(0); // going to set this value on mouse move

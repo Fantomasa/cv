@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { oddstormStack } from "@/data";
-import Tech from "./ui/Tech/Tech";
+import TechComponent from "./ui/Tech/Tech";
 
 export default function WorkExperience() {
   return (
@@ -21,7 +21,7 @@ export default function WorkExperience() {
           </div>
           <div className="flex">
             {oddstormStack.map((tech) => (
-              <Tech key={tech.name} tech={tech} />
+              <TechComponent key={tech.name} tech={tech} />
             ))}
           </div>
         </div>
