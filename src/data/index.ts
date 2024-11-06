@@ -27,6 +27,7 @@ export const techStack: {
   PostgreSQL: Tech;
   NextJS: Tech;
   TWCSS: Tech;
+  FM: Tech;
 } = {
   JS: {
     id: 1,
@@ -97,6 +98,11 @@ export const techStack: {
     id: 15,
     name: "TailwindCSS",
     img: "/tailwindcss.png"
+  },
+  FM: {
+    id: 16,
+    name: "FramerMotion",
+    img: "/framer-motion.png"
   }
 };
 
@@ -132,6 +138,14 @@ export const projects: Array<Project> = [
     desc: "Your go-to platform for real-time sports data and scores across Football, Basketball, and Tennis. Dive into live scores, fixtures, league tables, and more.",
     githubLink: "",
     img: "/pulsescore.png",
-    techStack: [techStack.TS]
+    techStack: [techStack.TS, techStack.Docker, techStack.NextJS, techStack.MongoDB, techStack.TWCSS, techStack.GitHub]
+  },
+  {
+    id: 3,
+    title: "CV",
+    desc: "About me and my skills",
+    githubLink: "",
+    img: "/cv.png",
+    techStack: [techStack.TS, techStack.NextJS, techStack.TWCSS, techStack.GitHub, techStack.FM]
   }
 ];
