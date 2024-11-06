@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Nav from "@/components/Nav";
+import { navItems } from "@/data";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,7 +27,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased text-white w-full`}>{children}</body>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased text-white`}>
+        <main className="relative flex flex-col bg-black-100 justify-center items-center overflow-hidden mx-auto sm:px-10 px-5">
+          <Nav navItems={navItems} />
+
+          {children}
+        </main>
+      </body>
     </html>
   );
 }

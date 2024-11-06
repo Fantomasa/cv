@@ -13,7 +13,7 @@ export default function WorkExperience() {
           <p className="font-semibold">OddStorm</p>
         </div>
         <div>
-          <h1 className="heading flex gap-2">
+          <h1 className="text-base flex gap-2">
             Software Engineer <p className="text-primary">@OddStorm</p>
           </h1>
           <div className="">
