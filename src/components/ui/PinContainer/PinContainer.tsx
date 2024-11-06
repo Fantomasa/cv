@@ -29,7 +29,7 @@ export function AnimatedPin({
           </div>
           {/* <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" /> */}
           <div className="flex flex-col gap-2 w-full">
-            <Image src={img} width={500} height={500} alt={title} className="rounded-lg mt-4" />
+            <Image src={img} width={500} height={500} alt={title} className="rounded-lg mt-4 border-2 border-primary" />
             <div className="flex gap-1">
               {techStack.map((tech) => (
                 <TechComponent key={tech.id} tech={tech} />

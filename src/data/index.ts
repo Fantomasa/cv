@@ -123,7 +123,14 @@ export type Project = {
   techStack: Array<Tech>;
   githubLink: string;
   url: string;
+  details: Array<ProjectDetails>;
 };
+
+export type ProjectDetails = {
+  title: string;
+  desc: string;
+};
+
 export const projects: Array<Project> = [
   {
     id: 1,
@@ -132,7 +139,8 @@ export const projects: Array<Project> = [
     githubLink: "",
     img: "/scrapper.png",
     techStack: [techStack.TS, techStack.Docker, techStack.NextJS, techStack.TWCSS, techStack.GitHub, techStack.Redis, techStack.MongoDB],
-    url: "#"
+    url: "#",
+    details: []
   },
   {
     id: 2,
@@ -141,7 +149,8 @@ export const projects: Array<Project> = [
     githubLink: "https://github.com/Fantomasa/pulsescore_15",
     img: "/pulsescore.png",
     techStack: [techStack.TS, techStack.Docker, techStack.NextJS, techStack.MongoDB, techStack.TWCSS, techStack.GitHub],
-    url: "https://pulsescore.net/"
+    url: "https://pulsescore.net/",
+    details: []
   },
   {
     id: 3,
@@ -150,6 +159,7 @@ export const projects: Array<Project> = [
     githubLink: "https://github.com/Fantomasa/cv",
     img: "/cv.png",
     techStack: [techStack.TS, techStack.NextJS, techStack.TWCSS, techStack.GitHub, techStack.FM],
-    url: "/"
+    url: "/",
+    details: []
   }
 ];
