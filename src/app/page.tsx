@@ -4,7 +4,7 @@ import WorkExperience from "@/components/WorkExperience";
 
 export default function Home() {
   return (
-    <div className="max-w-7xl w-full">
+    <div className="max-w-7xl w-full px-2">
       <Hero />
       <WorkExperience />
       <RecentProjects />

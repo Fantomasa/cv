@@ -30,7 +30,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased text-white`}>
         <main className="relative flex flex-col bg-black-100 justify-center overflow-hidden mx-auto">
           <Nav navItems={navItems} />
-          {children}
+          <div>{children}</div>
         </main>
       </body>
     </html>
