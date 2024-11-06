@@ -38,7 +38,9 @@ export default async function page({ params }: { params: Promise<{ id: string }>
         )}
       </div>
       <h2 className="sub-heading">{project.desc}</h2>
-      <Image className="w-full rounded-md" src={project.img} width={500} height={500} alt={project.title} />
+      <Link href={project.url}>
+        <Image className="w-full rounded-md border-2 border-primary" src={project.img} width={500} height={500} alt={project.title} />
+      </Link>
     </section>
   );
 }

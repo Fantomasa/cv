@@ -122,6 +122,7 @@ export type Project = {
   img: string;
   techStack: Array<Tech>;
   githubLink: string;
+  url: string;
 };
 export const projects: Array<Project> = [
   {
@@ -130,7 +131,8 @@ export const projects: Array<Project> = [
     desc: "This project aggregates public data from various websites, providing a centralized source of information for easy access and analysis.",
     githubLink: "",
     img: "/scrapper.png",
-    techStack: [techStack.TS, techStack.Docker, techStack.NextJS, techStack.TWCSS, techStack.GitHub, techStack.Redis, techStack.MongoDB]
+    techStack: [techStack.TS, techStack.Docker, techStack.NextJS, techStack.TWCSS, techStack.GitHub, techStack.Redis, techStack.MongoDB],
+    url: "#"
   },
   {
     id: 2,
@@ -138,7 +140,8 @@ export const projects: Array<Project> = [
     desc: "Your go-to platform for real-time sports data and scores across Football, Basketball, and Tennis. Dive into live scores, fixtures, league tables, and more.",
     githubLink: "https://github.com/Fantomasa/pulsescore_15",
     img: "/pulsescore.png",
-    techStack: [techStack.TS, techStack.Docker, techStack.NextJS, techStack.MongoDB, techStack.TWCSS, techStack.GitHub]
+    techStack: [techStack.TS, techStack.Docker, techStack.NextJS, techStack.MongoDB, techStack.TWCSS, techStack.GitHub],
+    url: "https://pulsescore.net/"
   },
   {
     id: 3,
@@ -146,6 +149,7 @@ export const projects: Array<Project> = [
     desc: "About me and my skills",
     githubLink: "https://github.com/Fantomasa/cv",
     img: "/cv.png",
-    techStack: [techStack.TS, techStack.NextJS, techStack.TWCSS, techStack.GitHub, techStack.FM]
+    techStack: [techStack.TS, techStack.NextJS, techStack.TWCSS, techStack.GitHub, techStack.FM],
+    url: "/"
   }
 ];
