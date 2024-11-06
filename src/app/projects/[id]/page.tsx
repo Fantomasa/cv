@@ -18,7 +18,9 @@ export default async function page({ params }: { params: Promise<{ id: string }>
     <section className="relative flex flex-col w-full md:w-1/2 p-2">
       <div className="flex justify-between">
         <div>
-          <h1 className="heading">{project.title}</h1>
+          <Link href={`${project.url}`} className="underline">
+            <h1 className="heading">{project.title}</h1>
+          </Link>
           <span className="flex mt-4">
             {project.techStack.map((tech: Tech) => (
               <TechComponent key={tech.id} tech={tech} />

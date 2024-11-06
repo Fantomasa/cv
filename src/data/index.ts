@@ -244,12 +244,40 @@ export const projects: Array<Project> = [
           Is particularly useful for testing API calls, asynchronous code, and external dependencies.`
         ]
       },
-
       {
         title: "Why MongoDB?",
         desc: [
           `MongoDB is a flexible and scalable NoSQL database, well-suited for applications that handle large, semi-structured, or unstructured datasets.
            MongoDB supports rapid read and write operations, which is useful for handling live data updates, such as scores and event statuses.`
+        ]
+      },
+      {
+        title: "Why Prisma ORM?",
+        desc: [
+          `Prisma ORM offers several advantages, especially for a project that uses MongoDB with Next.js and TypeScript. 
+           Prisma generates types based on database schema, ensuring that code remains type-safe.
+           Generates efficient queries for database operations.
+           Abstracts away the complexity of direct database interaction. So Focus is on writing application logic rather than worrying about complex SQL queries.
+           `
+        ]
+      },
+      {
+        title: "Why Docker?",
+        desc: [
+          `Docker streamlines project deployment by ensuring consistency across environments. 
+           With Docker, we bundle the application along with all its dependencies so there are no unexpected issues with package versions or system configurations. 
+           Docker makes it easier to run Jest tests in isolated environments, so you can be confident that everything works as expected when the tests pass.
+          `
+        ]
+      },
+      {
+        title: "Why GitHub?",
+        desc: [
+          `
+          Using GitHub for version control and to manage your CI/CD pipeline. 
+          Ensuring a smooth and automated workflow. This setup allows to easily deploy to production when the project is ready. 
+          The CI/CD process helps maintain consistency and reliability throughout the deployment process.
+          `
         ]
       }
     ]
