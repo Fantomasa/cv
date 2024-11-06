@@ -12,7 +12,20 @@ export type Tech = {
   img: string;
 };
 
-export const techStack: { JS: Tech; Jenkins: Tech; Delphi: Tech; GitHub: Tech; ProxMox: Tech; Meteor: Tech } = {
+export const techStack: {
+  JS: Tech;
+  Jenkins: Tech;
+  Delphi: Tech;
+  GitHub: Tech;
+  ProxMox: Tech;
+  Meteor: Tech;
+  Docker: Tech;
+  PM2: Tech;
+  Redis: Tech;
+  TS: Tech;
+  MongoDB: Tech;
+  PostgreSQL: Tech;
+} = {
   JS: {
     id: 1,
     name: "JavaScript",
@@ -42,6 +55,36 @@ export const techStack: { JS: Tech; Jenkins: Tech; Delphi: Tech; GitHub: Tech; P
     id: 6,
     name: "Meteor",
     img: "/meteor.png"
+  },
+  Docker: {
+    id: 7,
+    name: "Docker",
+    img: "/docker.png"
+  },
+  PM2: {
+    id: 8,
+    name: "PM2",
+    img: "/pm2.png"
+  },
+  Redis: {
+    id: 9,
+    name: "Redis",
+    img: "/redis.png"
+  },
+  TS: {
+    id: 10,
+    name: "TypeScript",
+    img: "/TS.png"
+  },
+  MongoDB: {
+    id: 11,
+    name: "MongoDB",
+    img: "/mongodb.png"
+  },
+  PostgreSQL: {
+    id: 12,
+    name: "PostgreSQL",
+    img: "/postgresql.png"
   }
 };
 
@@ -52,4 +95,23 @@ export const oddstormStack: Array<Tech> = [
   techStack.GitHub,
   techStack.ProxMox,
   techStack.Meteor
+];
+
+export type Project = {
+  id: number;
+  title: string;
+  desc: string;
+  img: string;
+  techStack: Array<Tech>;
+  githubLink: string;
+};
+export const projects: Array<Project> = [
+  {
+    id: 1,
+    title: "Scrapper",
+    desc: "This project aggregates public data from various websites, providing a centralized source of information for easy access and analysis.",
+    githubLink: "",
+    img: "/scrapper.png",
+    techStack: [techStack.TS]
+  }
 ];

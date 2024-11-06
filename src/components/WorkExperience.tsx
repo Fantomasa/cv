@@ -4,8 +4,8 @@ import Tech from "./ui/Tech/Tech";
 
 export default function WorkExperience() {
   return (
-    <section id="work-experience" className="section relative flex flex-col">
-      <div className="heading">Work Experience</div>
+    <section id="work-experience" className="section flex flex-col">
+      <h1 className="heading">Work Experience</h1>
       <p className="sub-heading">I didn&apos;t switch a lot of companies.</p>
       <div className="flex gap-10">
         <div className="flex items-center gap-1 h-fit">

@@ -68,7 +68,7 @@
 
 @layer utilities {
   .section {
-    @apply relative w-full md:w-1/2 mx-auto;
+    @apply relative w-full md:w-1/2 mx-auto mt-20;
   }
   .heading {
     @apply text-2xl leading-snug tracking-wide font-bold;
