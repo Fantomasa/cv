@@ -147,7 +147,7 @@ export const projects: Array<Project> = [
           `In project we have two main components: `,
           `1. Client: This part is responsible for preparing and configuring requests. 
           It defines what kind of request is needed (e.g., HTTP, HTTPS, controlled browser request, or WebSocket) and 
-          sets any specific options, such as headers, payload, or connection parameters. However, the client itself does not execute the request—it just prepares it.`,
+          sets any specific options, such as headers, proxies, payload, or connection parameters. However, the client itself does not execute the request—it just prepares it.`,
           `2. Server: This component handles the actual execution of requests configured by the client. 
           It takes the request details from the client and then performs the request, whether it's a simple HTTP/HTTPS call, a controlled browser interaction or a WebSocket connection.`
         ]
@@ -158,14 +158,29 @@ export const projects: Array<Project> = [
           `Docker streamlines project deployment by ensuring consistency across environments. 
           With Docker, we bundle the application along with all its dependencies so there are no unexpected issues with package versions or system configurations. 
           This setup makes it easy to upload and run the project reliably. 
-          Docker’s lightweight containers allow for straightforward scaling—if you need more processing power, you can simply deploy the container to a more powerful machine or scale up with additional containers.`
+          Docker’s lightweight containers allow for straightforward scaling—if we need more processing power, we can simply deploy the container to a more powerful machine or scale up with additional containers.`
         ]
       },
       {
         title: "Why NextJS?",
         desc: [
-          `With Next.js, you can visualize task statuses dynamically, displaying real-time updates directly in the user interface.
-           Editing task options like: Start/Stop the task. Edit the seasons etc..
+          `With Next.js, we can visualize task statuses dynamically, displaying real-time updates directly in the user interface.
+           Editing task options like: Start/Stop the task. Edit the seasons etc..`
+        ]
+      },
+      {
+        title: "Why Redis?",
+        desc: [
+          `Redis is ideal for managing proxy statuses because it's an in-memory database, offering high-speed access to frequently updated data. 
+          By centralizing proxy information in Redis, we ensure that all scrapers pull from the same, up-to-date set of proxies, making it easier to manage and monitor proxy usage 
+          across different scraping tasks. This setup helps streamline resource sharing and improves scraping operations.
+          `
+        ]
+      },
+      {
+        title: "Why MongoDB?",
+        desc: [
+          `When storing collected data, the choice of database depends significantly on how frequently the data is updated. We can store to any DB we want.
           `
         ]
       }
@@ -179,7 +194,25 @@ export const projects: Array<Project> = [
     img: "/pulsescore.png",
     techStack: [techStack.TS, techStack.Docker, techStack.NextJS, techStack.MongoDB, techStack.TWCSS, techStack.GitHub],
     url: "https://pulsescore.net/",
-    details: []
+    details: [
+      {
+        title: "About the project",
+        desc: [
+          "This is a website witch hightly depends on the scrapper project. Because all of collected data we visualise here.",
+          `1. The "Fixtures" section on website is a comprehensive list of football events, organized by leagues. Each league has its own dedicated table, making it easy for users to browse events within a specific league. This structure helps users quickly find relevant matches and view detailed scheduling information.`,
+          `2. The "Live" section on website represent real-time updates for Football, Tennis, and Basketball events. This section refreshes every 5 seconds, ensuring that users receive up-to-the-moment scores and updates for each sport. This frequent refresh rate provides a dynamic, up-to-date experience for users tracking live events.`
+        ]
+      },
+      {
+        title: "How it works?",
+        desc: [
+          `Here we have 3 main components:`,
+          `1. Scrapper: Collects all publicly available data required for the website.`,
+          `2. API: Manages data accessibility, allowing for filtering and merging to provide only the necessary data.`,
+          `3. Website: Presents the data visually for clients, making it easy to navigate and interact with the information collected`
+        ]
+      }
+    ]
   },
   {
     id: 3,
