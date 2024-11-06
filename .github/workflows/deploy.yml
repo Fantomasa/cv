@@ -1,0 +1,18 @@
+name: Deploy CV
+on: [push]
+env:
+  HOME: "/home/fantomasa"
+  PROJECT_DIR: "/home/fantomasa/docker/cv"
+  PROJECT_NAME: "cv"
+jobs:
+  Auto-Deploy:
+    runs-on: [self-hosted]
+    steps:
+      - name: Pulling repo from Github
+        run: |
+          cd $PROJECT_DIR
+          git pull
+      - name: start container
+        run: |
+          cd $PROJECT_DIR
+          docker compose up -d --build
