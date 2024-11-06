@@ -136,7 +136,7 @@ export const projects: Array<Project> = [
     id: 2,
     title: "PulseScore",
     desc: "Your go-to platform for real-time sports data and scores across Football, Basketball, and Tennis. Dive into live scores, fixtures, league tables, and more.",
-    githubLink: "",
+    githubLink: "https://github.com/Fantomasa/pulsescore_15",
     img: "/pulsescore.png",
     techStack: [techStack.TS, techStack.Docker, techStack.NextJS, techStack.MongoDB, techStack.TWCSS, techStack.GitHub]
   },
@@ -144,7 +144,7 @@ export const projects: Array<Project> = [
     id: 3,
     title: "CV",
     desc: "About me and my skills",
-    githubLink: "",
+    githubLink: "https://github.com/Fantomasa/cv",
     img: "/cv.png",
     techStack: [techStack.TS, techStack.NextJS, techStack.TWCSS, techStack.GitHub, techStack.FM]
   }
