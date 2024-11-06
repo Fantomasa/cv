@@ -274,7 +274,7 @@ export const projects: Array<Project> = [
         title: "Why GitHub?",
         desc: [
           `
-          Using GitHub for version control and to manage your CI/CD pipeline. 
+          Using GitHub for version control and to manage CI/CD pipeline. 
           Ensuring a smooth and automated workflow. This setup allows to easily deploy to production when the project is ready. 
           The CI/CD process helps maintain consistency and reliability throughout the deployment process.
           `
@@ -290,6 +290,33 @@ export const projects: Array<Project> = [
     img: "/cv.png",
     techStack: [techStack.TS, techStack.NextJS, techStack.TWCSS, techStack.GitHub, techStack.FM],
     url: "/",
-    details: []
+    details: [
+      {
+        title: "About the project",
+        desc: [
+          "The website is meant to show what I'm good at, what I love to do, and what my interests are. It’s a way to share my skills and passions with others."
+        ]
+      },
+      {
+        title: "Why NextJS?",
+        desc: [`Next.js is a particularly for projects that demand fast, dynamic, and SEO-friendly web applications. `]
+      },
+      {
+        title: "Why GitHub?",
+        desc: [
+          `
+          Using GitHub for version control and to manage CI/CD pipeline.           
+          `
+        ]
+      },
+      {
+        title: "Why Framer Motion?",
+        desc: [
+          `
+          Framer Motion is a popular library for animations in React applications. It's easy to use, customizable and have server-Side Rendering Support.
+          `
+        ]
+      }
+    ]
   }
 ];
