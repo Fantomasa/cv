@@ -15,7 +15,7 @@ export default async function page({ params }: { params: Promise<{ id: string }>
   const project = filteredProjects[0];
 
   return (
-    <section className="absolute top-36 flex flex-col w-full md:w-1/2 p-2">
+    <section className="relative top-36 flex flex-col w-full md:w-1/2 p-2">
       <div className="flex justify-between">
         <div>
           <h1 className="heading">{project.title}</h1>
