@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { oddstormStack } from "@/data";
+import Tech from "./ui/Tech/Tech";
 
 export default function WorkExperience() {
   return (
@@ -17,7 +19,11 @@ export default function WorkExperience() {
           <div className="">
             <p>Dec 2016 - Nov 2024</p>
           </div>
-          <div></div>
+          <div className="flex">
+            {oddstormStack.map((tech) => (
+              <Tech key={tech.name} tech={tech} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
