@@ -128,7 +128,7 @@ export type Project = {
 
 export type ProjectDetails = {
   title: string;
-  desc: string;
+  desc: Array<string>;
 };
 
 export const projects: Array<Project> = [
@@ -140,7 +140,36 @@ export const projects: Array<Project> = [
     img: "/scrapper.png",
     techStack: [techStack.TS, techStack.Docker, techStack.NextJS, techStack.TWCSS, techStack.GitHub, techStack.Redis, techStack.MongoDB],
     url: "#",
-    details: []
+    details: [
+      {
+        title: "How it works?",
+        desc: [
+          `In project we have two main components: `,
+          `1. Client: This part is responsible for preparing and configuring requests. 
+          It defines what kind of request is needed (e.g., HTTP, HTTPS, controlled browser request, or WebSocket) and 
+          sets any specific options, such as headers, payload, or connection parameters. However, the client itself does not execute the request—it just prepares it.`,
+          `2. Server: This component handles the actual execution of requests configured by the client. 
+          It takes the request details from the client and then performs the request, whether it's a simple HTTP/HTTPS call, a controlled browser interaction or a WebSocket connection.`
+        ]
+      },
+      {
+        title: "Why Docker?",
+        desc: [
+          `Docker streamlines project deployment by ensuring consistency across environments. 
+          With Docker, we bundle the application along with all its dependencies so there are no unexpected issues with package versions or system configurations. 
+          This setup makes it easy to upload and run the project reliably. 
+          Docker’s lightweight containers allow for straightforward scaling—if you need more processing power, you can simply deploy the container to a more powerful machine or scale up with additional containers.`
+        ]
+      },
+      {
+        title: "Why NextJS?",
+        desc: [
+          `With Next.js, you can visualize task statuses dynamically, displaying real-time updates directly in the user interface.
+           Editing task options like: Start/Stop the task. Edit the seasons etc..
+          `
+        ]
+      }
+    ]
   },
   {
     id: 2,

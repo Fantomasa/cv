@@ -1,5 +1,5 @@
 import TechComponent from "@/components/ui/Tech/Tech";
-import { projects, Tech } from "@/data";
+import { ProjectDetails, projects, Tech } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
@@ -41,6 +41,22 @@ export default async function page({ params }: { params: Promise<{ id: string }>
       <Link href={project.url}>
         <Image className="w-full rounded-md border-2 border-primary" src={project.img} width={500} height={500} alt={project.title} />
       </Link>
+      {project.details.map((detail) => (
+        <ProjectDetailsComponent key={detail.title} details={detail} />
+      ))}
     </section>
+  );
+}
+
+function ProjectDetailsComponent({ details }: { details: ProjectDetails }) {
+  return (
+    <div className="mt-10">
+      <h1 className="heading">{details.title}</h1>
+      {details.desc.map((p, idx) => (
+        <h1 key={idx} className="sub-heading">
+          {p}
+        </h1>
+      ))}
+    </div>
   );
 }
