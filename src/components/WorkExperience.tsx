@@ -17,6 +17,7 @@ export default function WorkExperience() {
           <div className="">
             <p>Dec 2016 - Nov 2024</p>
           </div>
+          <div></div>
         </div>
       </div>
     </section>
