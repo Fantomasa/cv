@@ -28,6 +28,8 @@ export const techStack: {
   NextJS: Tech;
   TWCSS: Tech;
   FM: Tech;
+  Jest: Tech;
+  Prisma: Tech;
 } = {
   JS: {
     id: 1,
@@ -103,6 +105,16 @@ export const techStack: {
     id: 16,
     name: "FramerMotion",
     img: "/framer-motion.png"
+  },
+  Jest: {
+    id: 17,
+    name: "Jest",
+    img: "/jest.png"
+  },
+  Prisma: {
+    id: 18,
+    name: "Prisma",
+    img: "/prisma.png"
   }
 };
 
@@ -192,7 +204,16 @@ export const projects: Array<Project> = [
     desc: "Your go-to platform for real-time sports data and scores across Football, Basketball, and Tennis. Dive into live scores, fixtures, league tables, and more.",
     githubLink: "https://github.com/Fantomasa/pulsescore_15",
     img: "/pulsescore.png",
-    techStack: [techStack.TS, techStack.Docker, techStack.NextJS, techStack.MongoDB, techStack.TWCSS, techStack.GitHub],
+    techStack: [
+      techStack.TS,
+      techStack.NextJS,
+      techStack.TWCSS,
+      techStack.Jest,
+      techStack.MongoDB,
+      techStack.Prisma,
+      techStack.Docker,
+      techStack.GitHub
+    ],
     url: "https://pulsescore.net/",
     details: [
       {
@@ -210,6 +231,25 @@ export const projects: Array<Project> = [
           `1. Scrapper: Collects all publicly available data required for the website.`,
           `2. API: Manages data accessibility, allowing for filtering and merging to provide only the necessary data.`,
           `3. Website: Presents the data visually for clients, making it easy to navigate and interact with the information collected`
+        ]
+      },
+      {
+        title: "Why NextJS?",
+        desc: [`Next.js is a particularly for projects that demand fast, dynamic, and SEO-friendly web applications. `]
+      },
+      {
+        title: "Why Jest?",
+        desc: [
+          `Jest is a popular testing framework, particularly suited for JavaScript and TypeScript projects. Great with React Testing Library. 
+          Is particularly useful for testing API calls, asynchronous code, and external dependencies.`
+        ]
+      },
+
+      {
+        title: "Why MongoDB?",
+        desc: [
+          `MongoDB is a flexible and scalable NoSQL database, well-suited for applications that handle large, semi-structured, or unstructured datasets.
+           MongoDB supports rapid read and write operations, which is useful for handling live data updates, such as scores and event statuses.`
         ]
       }
     ]
