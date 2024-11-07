@@ -88,6 +88,7 @@ export const techStack: {
   FM: Tech;
   Jest: Tech;
   Prisma: Tech;
+  GoogleCloud: Tech;
 } = {
   JS: {
     id: 1,
@@ -173,6 +174,11 @@ export const techStack: {
     id: 18,
     name: "Prisma",
     img: "/prisma.png"
+  },
+  GoogleCloud: {
+    id: 19,
+    name: "Google Cloud",
+    img: "/google-cloud.png"
   }
 };
 
@@ -454,4 +460,51 @@ export const projects: Array<Project> = [
       }
     ]
   }
+];
+
+export type Channel = {
+  name: string;
+  img: string;
+  href: string;
+};
+
+export const channelsArr: Array<Channel> = [
+  {
+    name: "Theo - t3.gg",
+    img: "/theo.png",
+    href: "https://www.youtube.com/@t3dotgg"
+  },
+  {
+    name: "Techno Tim",
+    img: "/tim.png",
+    href: "https://www.youtube.com/@TechnoTim"
+  },
+  {
+    name: "Ben Holmes",
+    img: "/ben.png",
+    href: "https://www.youtube.com/@bholmesdev"
+  },
+  {
+    name: "Ray Dalio",
+    img: "/ray.png",
+    href: "https://www.youtube.com/@principlesbyraydalio"
+  },
+  {
+    name: "Anton Putra",
+    img: "/anton.png",
+    href: "https://www.youtube.com/@AntonPutra"
+  }
+];
+
+export const loveTech: Array<Tech> = [
+  techStack.TS,
+  techStack.JS,
+  techStack.NextJS,
+  techStack.Prisma,
+  techStack.MongoDB,
+  techStack.PostgreSQL,
+  techStack.Docker,
+  techStack.PM2,
+  techStack.GitHub,
+  techStack.GoogleCloud
 ];
