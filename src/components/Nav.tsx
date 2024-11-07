@@ -23,9 +23,7 @@ export default function Nav({ navItems, className }: { navItems: Array<NavItem>;
           <Link
             key={`link=${idx}`}
             href={`/${navItem.link}`}
-            className={cn(
-              "dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
-            )}
+            className={cn("text-neutral-50 items-center flex space-x-1 hover:text-neutral-300 ")}
           >
             <span>{navItem.icon}</span>
             <span>{navItem.name}</span>
