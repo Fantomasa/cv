@@ -3,7 +3,8 @@ import { NavItem } from "@/components/Nav";
 export const navItems: Array<NavItem> = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Work", link: "#work-experience" }
+  { name: "Work", link: "#work-experience" },
+  { name: "Contact", link: "#contact" }
 ];
 
 export type Tech = {
