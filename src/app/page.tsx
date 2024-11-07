@@ -1,3 +1,4 @@
+import Certifications from "@/components/Certifications";
 import Education from "@/components/Education/Education";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
@@ -8,6 +9,7 @@ export default function Home() {
     <div className="max-w-7xl w-full px-2 mx-auto">
       <Hero />
       <Education />
+      <Certifications />
       <WorkExperience />
       <RecentProjects />
     </div>

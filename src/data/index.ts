@@ -7,6 +7,62 @@ export const navItems: Array<NavItem> = [
   { name: "Contact", link: "#contact" }
 ];
 
+export type Certificat = {
+  name: string;
+  img: string;
+};
+
+export const certifications: Array<Certificat> = [
+  {
+    name: "basics",
+    img: "/basics.png"
+  },
+  {
+    name: "team",
+    img: "/team.png"
+  },
+  {
+    name: "fundamentals",
+    img: "/fundamentals.png"
+  },
+  {
+    name: "oop",
+    img: "/oop.png"
+  },
+  {
+    name: "entity",
+    img: "/entity.png"
+  },
+  {
+    name: "js-adv",
+    img: "/js-adv.png"
+  },
+  {
+    name: "js-app",
+    img: "/js-app.png"
+  },
+  {
+    name: "data-struc",
+    img: "/data-struc.png"
+  },
+  {
+    name: "alg",
+    img: "/alg.png"
+  },
+  {
+    name: "wsa",
+    img: "/wsa.png"
+  },
+  {
+    name: "wsa-adv",
+    img: "/wsa-adv.png"
+  },
+  {
+    name: "react",
+    img: "/react.png"
+  }
+];
+
 export type Tech = {
   id: number;
   name: string;
