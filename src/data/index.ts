@@ -284,7 +284,7 @@ export const projects: Array<Project> = [
   },
   {
     id: 3,
-    title: "CV",
+    title: "CV Website",
     desc: "About me and my skills",
     githubLink: "https://github.com/Fantomasa/cv",
     img: "/cv.png",
