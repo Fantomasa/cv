@@ -4,9 +4,9 @@ import TechComponent from "./ui/Tech/Tech";
 
 export default function WorkExperience() {
   return (
-    <section id="work-experience" className="section flex flex-col">
+    <section id="work-experience" className="section flex flex-col gap-2">
       <h1 className="heading">Work Experience</h1>
-      <p className="sub-heading">I didn&apos;t switch a lot of companies.</p>
+      {/* <p className="sub-heading">I didn&apos;t switch a lot of companies.</p> */}
       <div className="flex gap-10">
         <div className="flex items-center gap-1 h-fit">
           <Image className="size-6" alt="oddstorm" src={"/oddstorm.png"} width={100} height={100} />
