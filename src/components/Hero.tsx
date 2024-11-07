@@ -1,6 +1,6 @@
 import { GridBackground } from "./ui/GridBackground";
 import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/TextGenerate";
+// import { TextGenerateEffect } from "./ui/TextGenerate";
 import { BackgroundBeamsWithCollision } from "./ui/BackgroundBeams";
 
 export default function Hero() {
@@ -14,7 +14,10 @@ export default function Hero() {
       <BackgroundBeamsWithCollision>
         <div className="flex justify-center my-10 z-10">
           <div className="flex-col">
-            <TextGenerateEffect className="text-start text-lg" words="I'm a Softawre Engineer that writes code every day." />
+            {/* <TextGenerateEffect className="text-start text-lg" words="I'm a Softawre Engineer that writes code every day." /> */}
+            <h1 className="text-balance text-2xl leading-snug tracking-wide font-bold">
+              I&apos;m a Softawre Engineer that writes code <p className="text-primary">every day</p>
+            </h1>
             <p className="text-start w-full text-white/95 mt-5 md:tracking-wider mb-4 text-sm md:text-base">
               I&apos;m Ivaylo Georgiev, and I&apos;m passionate about writing clean, high-quality code that&apos;s easy to maintain and
               improve over time. I&apos;m committed to continuous learning, exploring new solutions and technologies to enhance both my

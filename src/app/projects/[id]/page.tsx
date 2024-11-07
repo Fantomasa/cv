@@ -56,7 +56,7 @@ function ProjectDetailsComponent({ details }: { details: ProjectDetails }) {
     <div className="mt-10">
       <h1 className="heading">{details.title}</h1>
       {details.desc.map((p, idx) => (
-        <h1 key={idx} className="sub-heading">
+        <h1 key={idx} className="sub-heading text-balace">
           {p}
         </h1>
       ))}

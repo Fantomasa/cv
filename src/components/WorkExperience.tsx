@@ -17,7 +17,7 @@ export default function WorkExperience() {
             Software Engineer <p className="text-primary">@OddStorm</p>
           </h1>
           <div className="">
-            <p>Dec 2016 - Nov 2024</p>
+            <p>Dec 2015 - Nov 2024</p>
           </div>
           <div className="flex">
             {oddstormStack.map((tech) => (

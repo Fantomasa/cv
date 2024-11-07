@@ -119,6 +119,83 @@ export const techStack: {
   }
 };
 
+export type Univercity = {
+  id: number;
+  img: string;
+  name: string;
+  period: string;
+  education: string;
+  edAt?: string;
+  techStack: Array<Tech>;
+};
+export const education: Array<Univercity> = [
+  {
+    id: 0,
+    img: "/university.png",
+    name: "University of Economics - Varna",
+    education: "Bachelor",
+    edAt: "@Informatics",
+    period: "Dec 2011 - Dec 2015",
+    techStack: []
+  },
+  {
+    id: 1,
+    img: "/softuni.png",
+    name: "Software University",
+    education: "C#",
+    period: "Mart 2016 - Dec 2016",
+    techStack: []
+  },
+  {
+    id: 2,
+    img: "/softuni.png",
+    name: "Software University",
+    education: "JavaScript",
+    period: "May 2017 - Aug 2017",
+    techStack: []
+  },
+  {
+    id: 3,
+    img: "/softuni.png",
+    name: "Software University",
+    education: "Data Structures with C#",
+    period: "Dec 2018 - Mart 2019",
+    techStack: []
+  },
+  {
+    id: 4,
+    img: "/softuni.png",
+    name: "Software University",
+    education: "Algorithms with C#",
+    period: "Mart 2019 - Jun 2019",
+    techStack: []
+  },
+  {
+    id: 5,
+    img: "/softuni.png",
+    name: "Software University",
+    education: "WSA",
+    period: "Aug 2020 - Sep 2020",
+    techStack: []
+  },
+  {
+    id: 6,
+    img: "/softuni.png",
+    name: "Software University",
+    education: "WSA Advanced",
+    period: "Nov 2020 - Feb 2021",
+    techStack: []
+  },
+  {
+    id: 7,
+    img: "/softuni.png",
+    name: "Software University",
+    education: "ReactJS",
+    period: "Nov 2021 - Dec 2021",
+    techStack: []
+  }
+];
+
 export const oddstormStack: Array<Tech> = [
   techStack.Delphi,
   techStack.Jenkins,
