@@ -6,7 +6,7 @@ export default function Certifications() {
     <section className="section">
       <h1 className="heading">Certifications</h1>
 
-      <InfiniteMovingCards items={certifications} speed="slow" pauseOnHover={false} />
+      <InfiniteMovingCards items={certifications} speed="normal" pauseOnHover={false} />
     </section>
   );
 }
