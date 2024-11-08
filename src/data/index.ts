@@ -112,7 +112,7 @@ export const techStack: {
   },
   ProxMox: {
     id: 5,
-    name: "ProxMox",
+    name: "Proxmox",
     img: "/proxmox.png"
   },
   Meteor: {
