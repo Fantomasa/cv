@@ -398,7 +398,7 @@ export const projects: Array<Project> = [
           `Prisma ORM offers several advantages, especially for a project that uses MongoDB with Next.js and TypeScript. 
            Prisma generates types based on database schema, ensuring that code remains type-safe.
            Generates efficient queries for database operations.
-           Abstracts away the complexity of direct database interaction. So Focus is on writing application logic rather than worrying about complex SQL queries.
+           Abstracts away the complexity of direct database interaction. So Focus is on writing application logic rather than worrying about complex queries.
            `
         ]
       },
